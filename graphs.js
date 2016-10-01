@@ -115,7 +115,7 @@ d3.csv("flights-3m.json", function(error, flights) {
 
   function flightList(div) {
     // here we decide how many entries to show (N): date.top(N)
-    var flightsByDate = nestByDate.entries(date.top(10));
+    var flightsByDate = nestByDate.entries(date.top(5));
 
     div.each(function() {
       var date = d3.select(this).selectAll(".date")
